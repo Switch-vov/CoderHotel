@@ -10,7 +10,7 @@ public abstract class TimeSubject {
     /**
      * 时钟绑定对象
      */
-    protected Map<String, Clock> clocks = new HashMap<String, Clock>();
+    protected Map<String, Clock> clocks = new HashMap<>();
 
     /**
      * 附加城市和时钟
