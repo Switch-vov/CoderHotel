@@ -5,6 +5,8 @@ package com.pc;
  */
 public class UtcTime extends TimeSubject{
 
+    private int utcZeroTime;
+
     @Override
     public void notifyAllClocks() {
         for(Clock clock : super.clocks.values()) {
