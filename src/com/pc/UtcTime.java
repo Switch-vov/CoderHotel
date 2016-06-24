@@ -1,7 +1,7 @@
 package com.pc;
 
 /**
- * Created by Administrator on 2016-06-24.
+ * Created by Switch on 2016-06-24.
  */
 public class UtcTime extends TimeSubject{
 

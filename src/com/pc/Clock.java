@@ -7,11 +7,11 @@ public abstract class Clock {
     /**
      * 相对于UTC时间的时间差
      */
-    private static final int UTC_OFFSET = 0;
+    protected static final int UTC_OFFSET = 0;
     /**
      * 本地时间
      */
-    private int localTime = 0;
+    protected int localTime = 0;
 
     /**
      * 设置本地时间
