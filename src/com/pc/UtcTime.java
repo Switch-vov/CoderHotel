@@ -5,7 +5,18 @@ package com.pc;
  */
 public class UtcTime extends TimeSubject{
 
+    /**
+     * utc为零的时间
+     */
     private int utcZeroTime;
+
+    public int getUtcZeroTime() {
+        return utcZeroTime;
+    }
+
+    public void setUtcZeroTime(int utcZeroTime) {
+        this.utcZeroTime = utcZeroTime;
+    }
 
     @Override
     public void notifyAllClocks() {
