@@ -7,11 +7,15 @@ public abstract class Clock {
     /**
      * 相对于UTC时间的时间差
      */
-    protected static final int UTC_OFFSET = 0;
+    protected static int UTC_OFFSET = 0;
     /**
      * 本地时间
      */
     protected int localTime = 0;
+
+    public Clock(int utcOffset) {
+        UTC_OFFSET = utcOffset;
+    }
 
     /**
      * 设置本地时间
@@ -26,5 +30,9 @@ public abstract class Clock {
      */
     public static int toLocalTime(int utcZeroTime) {
         return utcZeroTime + UTC_OFFSET;
+    }
+
+    public String getTime() {
+        return String.valueOf(this.localTime);
     }
 }
