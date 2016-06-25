@@ -27,6 +27,7 @@ public class PhoneClock extends Clock{
     }
 
     // TODO: PhoneClock.getTime() and CityClock.getTime() are duplicated
+    @Override
     public int getTime() {
         return this.time;
     }
