@@ -40,4 +40,13 @@ public abstract class Clock {
     public void setLocalTimeFromUtcZeroTime(int utcZeroTime) {
         this.localTime = Clock.makeHourWithin0To23(utcZeroTime + this.UTC_OFFSET);
     }
+
+    /**
+     * 将时间限定在0-23之间
+     * @param hour 小时数
+     * @return 0-23的时间
+     */
+    private static int makeHourWithin0To23(int hour) {
+        return (hour + 24) % 24;
+    }
 }
