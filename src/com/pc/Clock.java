@@ -32,4 +32,12 @@ public abstract class Clock {
     public String getTime() {
         return String.valueOf(this.localTime);
     }
+
+    /**
+     * 通过UTC时间设置本地时间
+     * @param utcZeroTime utc为零的时间
+     */
+    public void setLocalTimeFromUtcZeroTime(int utcZeroTime) {
+        this.localTime = utcZeroTime + this.UTC_OFFSET;
+    }
 }
