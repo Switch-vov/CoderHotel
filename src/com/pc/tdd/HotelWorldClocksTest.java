@@ -45,7 +45,7 @@ public class HotelWorldClocksTest {
         CityClock newYorkClock = new CityClock(-5);
         HotelWorldClockSystem hotelWorldClockSystem = new HotelWorldClockSystem();
         hotelWorldClockSystem.attach(londonClock);
-        hotelWorldClockSystem.attacg(newYorkClock);
+        hotelWorldClockSystem.attach(newYorkClock);
         PhoneClock phoneClock = new PhoneClock(8);
 
         // Act
