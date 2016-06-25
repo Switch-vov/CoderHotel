@@ -21,6 +21,5 @@ public class HotelWorldClocksRunner {
 
         // 打印所有时钟
         utcTime.printTimeOfAllClocks();
-
     }
 }
