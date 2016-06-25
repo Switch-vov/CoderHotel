@@ -23,14 +23,7 @@ public abstract class Clock {
      */
     public abstract void setLocalTime(int localTime);
 
-    /**
-     * 从UTC时间到本地时间
-     * @param utcZeroTime utc为零的时间
-     * @return 本地时间
-     */
-    public static int toLocalTime(int utcZeroTime) {
-        return utcZeroTime + UTC_OFFSET;
-    }
+
 
     /**
      * 获取本地时间
