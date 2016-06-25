@@ -1,4 +1,4 @@
-package com.pc;
+package com.pc.tdd;
 
 import org.junit.Test;
 
