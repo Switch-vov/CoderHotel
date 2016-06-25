@@ -5,10 +5,11 @@ package com.pc.tdd;
  */
 public class CityClock {
     private int utcOffset;
+    private int utcZeroTime;
 
     // TODO: The constructors of CityClock and PhoneClock are duplicated
     public CityClock(int utcOffset) {
-
+        this.utcOffset = utcOffset;
     }
 
     public int getTime() {
