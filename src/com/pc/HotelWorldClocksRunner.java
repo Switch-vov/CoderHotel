@@ -13,7 +13,7 @@ public class HotelWorldClocksRunner {
         utcTime.attach("sydney", new CityClock(10));
         utcTime.attach("newYork", new CityClock(-5));
 
-        Clock phoneClock = new PhoneClock(8);
+        PhoneClock phoneClock = new PhoneClock(8);
         phoneClock.setUtcTime(utcTime);
 
         // 设置手机时间
