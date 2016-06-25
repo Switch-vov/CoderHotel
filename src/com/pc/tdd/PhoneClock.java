@@ -5,4 +5,7 @@ package com.pc.tdd;
  */
 public class PhoneClock {
 
+    public PhoneClock(int utcOffset) {
+
+    }
 }
