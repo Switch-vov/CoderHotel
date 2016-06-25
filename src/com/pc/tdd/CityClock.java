@@ -3,7 +3,7 @@ package com.pc.tdd;
 /**
  * Created by Switch on 2016-06-25.
  */
-public class CityClock {
+public class CityClock extends Clock{
     private int utcOffset;
     private int utcZeroTime;
 
@@ -13,7 +13,7 @@ public class CityClock {
     }
 
     public int getTime() {
-        return (this.utcOffset + this.utcZeroTime + 24) % 2;
+        return (this.utcOffset + this.utcZeroTime + 24) % 24;
     }
 
     public void setUtcZeroTime(int utcZeroTime) {
