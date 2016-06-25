@@ -41,7 +41,6 @@ public class HotelWorldClocksTest {
         assertEquals(20, newYorkClock.getTime());
     }
 
-    // TODO-working-on: Set time to multiple city clocks
     @Test
     public void the_time_of_clock_London_and_NewYork_should_be_1_and_20_respectively_after_the_the_phone_clock_is_set_to_9_Beijing_time() {
         // Arrange
@@ -61,4 +60,14 @@ public class HotelWorldClocksTest {
         assertEquals(20, newYorkClock.getTime());
     }
 
+
+    // TODO: the time of the phone clock should be set correctly after its setTime() method is invoked
+    @Test
+    public void the_time_of_the_phone_clock_should_be_set_correctly_after_its_setTime_method_is_invoked() {
+
+
+
+        // Assert
+        assertEquals(9, phoneClock.getTime());
+    }
 }
